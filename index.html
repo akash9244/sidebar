@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>side menu</title>
+  </head>
+  <body>
+   
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a><hr>
+  <a href="#">Services</a><hr>
+  <a href="#">Clients</a><hr>
+  <a href="#">Contact</a><hr>
+  <input type="search" class="input" name="" placeholder="type here to search"><hr>
+</div>
+
+<div id="main">
+ <button class="openbtn" onclick="openNav()"><span>&#9776;</span></button>
+</div>
+
+
+
+<script>
+	
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main"></script>
+
+
+  </body>
+</html>
